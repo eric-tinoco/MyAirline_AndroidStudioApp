@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MyAirline</string>
+
+    <!--Strings for MainActivity-->
+    <string name="titleTextView">Welcome to\nMyAirline</string>
+    <string name="createAccountButton">Create Account</string>
+    <string name="reserveSeatButton">Reserve Seat</string>
+    <string name="cancelReservationButton">Cancel Reservation</string>
+    <string name="manageSystemButton">Manage System</string>
+
+    <!--Strings for CreateAccountActivity-->
+    <string name="newMemberTextView">Welcome New Members</string>
+    <string name="enterUserNameTextView">Enter Username</string>
+    <string name="enterPasswordTextView">Enter Password</string>
+    <string name="reEnterPasswordTextView">Re-Enter Password</string>
+    <string name="joinEditText">Create Account</string>
+
+    <!--Strings for LoginPageActivity-->
+    <string name="loginButton">Login</string>
+    <string name="loginHeader">Login for Access</string>
+
+    <!--Strings for ReserveSeatActivity-->
+    <string name="choseDestination">Choose Your Destination</string>
+    <string name="departureTextView">Departure</string>
+    <string name="arrivalTextView">Arrival</string>
+    <string name="numberOfTicketsTextView">Number of Tickets</string>
+    <string name="flightNameString">Flight Name</string>
+    <string name="flightButton">Book</string>
+    <string name="filter">Filter</string>
+    <string-array name="destination">
+        <item>Pick One</item>
+        <item>Monterey</item>
+        <item>Los Angeles</item>
+        <item>Seattle</item>
+    </string-array>
+
+</resources>

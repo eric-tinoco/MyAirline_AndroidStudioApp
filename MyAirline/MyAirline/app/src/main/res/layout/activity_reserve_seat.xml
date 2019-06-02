@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveSeatActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/choseDestination"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="serif"
+        android:text="@string/choseDestination"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="36sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/flightOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/flightName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="@string/flightNameString"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/flightButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickFlight" />
+
+    <Button
+        android:id="@+id/flightButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="@string/flightButton"
+        app:layout_constraintBaseline_toBaselineOf="@+id/flightName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flightName" />
+
+    <EditText
+        android:id="@+id/numberTickets"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="@string/numberOfTicketsTextView"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/pickFlight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/arrivalText"
+        app:layout_constraintTop_toBottomOf="@+id/departureText" />
+
+    <TextView
+        android:id="@+id/flightOptions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="11dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/departureText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choseDestination" />
+
+    <EditText
+        android:id="@+id/arrivalText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="@string/arrivalTextView"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/numberTickets"
+        app:layout_constraintEnd_toStartOf="@+id/numberTickets"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/departureText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:hint="@string/departureTextView"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/numberTickets"
+        app:layout_constraintEnd_toStartOf="@+id/filterButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flightOptions" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/filter"
+        app:layout_constraintBaseline_toBaselineOf="@+id/departureText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/departureText" />
+
+    <TextView
+        android:id="@+id/pickFlight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="20dp"
+        android:text="Pick Your Flight"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/flightName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberTickets" />
+</android.support.constraint.ConstraintLayout>
